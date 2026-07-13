@@ -1,0 +1,10 @@
+name: Main
+train:
+  num_epochs: 10
+  transforms:
+    - name: gaussian_smoothing_1d
+      sigma: 0.158
+    - name: double
+    - name: normalize
+      k: 2.0
+    - name: nonexistent_transform
